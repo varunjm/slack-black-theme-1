@@ -4,7 +4,7 @@
 # Extended by: Nockiro
 
 # Modify the interjectCode.js for the theme
-# Current snippet from: https://github.com/Nockiro/slack-black-theme/blob/master/interjectCode.js
+# Current snippet from: https://github.com/varunjm/slack-black-theme-1/blob/master/interjectCode.js
 
 # Required for MessageBox
 Add-Type -AssemblyName System.Windows.Forms
@@ -100,7 +100,7 @@ if ($Slack_Major -eq 4) {
 	# Extract ssb-interop
 	& $7zipRoot\7z.exe e app.asar -odist dist\ssb-interop.bundle.js -y
 
-	# Append the custom JS code as instructed: https://github.com/Nockiro/slack-black-theme
+	# Append the custom JS code as instructed: https://github.com/varunjm/slack-black-theme-1
 	Add-Content dist\ssb-interop.bundle.js -Value $customThemeJS
 
 	# Backup already exists?
